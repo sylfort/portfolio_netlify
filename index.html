@@ -121,10 +121,29 @@
         </p>
         <div class="row">
           <div class="col-8 col-12-small">
-            <form method="post" action="sendEmail.php">
+            <form
+              action="https://formsubmit.co/contact@sylviomafort.dev"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_next"
+                value="https://sylviomafort.dev/thankyou.html"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New EMAIL from sylviomafortDEV!"
+              />
               <div class="row gtr-uniform gtr-50">
                 <div class="col-6 col-12-xsmall">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
                 </div>
                 <div class="col-6 col-12-xsmall">
                   <input
@@ -132,6 +151,7 @@
                     name="email"
                     id="email"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <div class="col-12">
@@ -145,7 +165,9 @@
               </div>
             </form>
             <ul class="actions">
-              <li><input type="submit" value="Send Message" /></li>
+              <li>
+                <button type="submit" value="Send Message">Send Message</button>
+              </li>
             </ul>
           </div>
           <div class="col-4 col-12-small">
