@@ -109,6 +109,11 @@
       var scrollDiv = document.getElementById("header").offsetTop;
       window.scrollTo({ top: scrollDiv, behavior: "smooth" });
     });
+
+    $(".about").click(function () {
+      var scrollDiv = document.getElementById("about").offsetTop;
+      window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+    });
   });
 
   // Main Sections: Two.
