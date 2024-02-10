@@ -19,12 +19,12 @@
     };
 
   // Scrolly.
-  //   $("#main, .scrolly").scrolly({
-  //     speed: 1000,
-  //     offset: function () {
-  //       return $main.height();
-  //     },
-  //   });
+  // $("#main, .scrolly").scrolly({
+  //   speed: 1000,
+  //   offset: function () {
+  //     return $main.height();
+  //   },
+  // });
 
   // Breakpoints.
   breakpoints({
@@ -96,7 +96,7 @@
   //   Scroll
   $(document).ready(function () {
     $(".work").click(function () {
-      var scrollDiv = document.getElementById("two").offsetTop;
+      var scrollDiv = document.getElementById("work").offsetTop;
       window.scrollTo({ top: scrollDiv, behavior: "smooth" });
     });
 

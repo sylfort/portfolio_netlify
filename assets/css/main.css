@@ -135,7 +135,7 @@ section {
   margin: 0 0 0.3em 0;
 }
 
-.good {
+.actions-container {
   margin: 3em 0 0.3em 1em !important;
 }
 
@@ -3450,4 +3450,12 @@ body.is-touch .poptrox-popup .closer {
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/roboto-v30-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+html {
+  scroll-padding-top: 2.5em; /* Adjust this value to match your fixed header's height */
 }
