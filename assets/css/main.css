@@ -2699,9 +2699,9 @@ input[type="button"]:disabled,
 }
 
 .work-item p {
-  font-size: 0.8em;
-  line-height: 1.5em;
-  margin: 0;
+  /* font-size: 0.8em;
+  line-height: 1.5em; */
+  margin: 1em 0 0 0;
 }
 
 /* Header */
@@ -2820,7 +2820,7 @@ input[type="button"]:disabled,
 
 #main > section {
   border-top: solid 2px #efefef;
-  margin: 4em 0 0 0;
+  margin: 3em 0 0 0;
   padding: 0 0 0 0;
 }
 
