@@ -46,7 +46,6 @@ sub,
 sup,
 tt,
 var,
-b,
 u,
 i,
 center,
@@ -133,6 +132,7 @@ section {
 
 #main-h2 {
   margin: 0 0 0.3em 0;
+  min-width: 635px;
 }
 
 .actions-container {
@@ -245,11 +245,11 @@ a:hover {
   text-decoration: none;
 }
 
-strong,
+/* strong,
 b {
   color: #787878;
   font-weight: 400;
-}
+} */
 
 em,
 i {
@@ -3455,4 +3455,27 @@ h2 {
 
 html {
   scroll-padding-top: 2.5em; /* Adjust this value to match your fixed header's height */
+}
+
+.flag-icon {
+  vertical-align: middle;
+  width: 20px; /* Or your desired width */
+  height: auto; /* Keeps the aspect ratio intact */
+}
+
+#project-title {
+  color: #c49250 !important;
+}
+
+/* b {
+  color: ;
+} */
+
+#rounded {
+  border-radius: 25px !important;
+  /* border: 2px solid #000000; */
+  background: #6fbf73 !important;
+  color: #0b130b !important;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 13pt;
 }
