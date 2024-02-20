@@ -117,6 +117,12 @@ section {
   margin-left: 5em;
 }
 
+@media (max-width: 736px) {
+  .m-left {
+    margin-left: 0; /* Set min-width to auto for mobile devices */
+  }
+}
+
 #full {
   width: 100vw;
 }
@@ -132,7 +138,14 @@ section {
 
 #main-h2 {
   margin: 0 0 0.3em 0;
-  min-width: 635px;
+  min-width: 635px; /* Default min-width for larger screens */
+}
+
+/* Media query for screens smaller than 640px */
+@media (max-width: 736px) {
+  #main-h2 {
+    min-width: auto; /* Set min-width to auto for mobile devices */
+  }
 }
 
 .actions-container {
@@ -2784,6 +2797,7 @@ input[type="button"]:disabled,
 
 #footer .icons {
   margin: 1em 0 0 0;
+  min-width: 214px;
 }
 
 #footer .icons a {
@@ -3478,4 +3492,31 @@ html {
   color: #0b130b !important;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 13pt;
+}
+
+@media (max-width: 736px) {
+  #rounded {
+    font-size: 10pt;
+  }
+}
+
+.flex-container {
+  display: flex; /* Display as flex container */
+  flex-direction: column;
+  align-items: center; /* Vertically align items in the middle */
+  /* Ensure there is some space between the icon and the text */
+  gap: 10px; /* Adjust as needed */
+}
+
+.flex-container a,
+.flex-container p {
+  margin: 0; /* Remove default margins */
+  padding: 0 0.5em; /* Remove default paddings */
+  /* Adjust line-height as necessary for alignment */
+  line-height: 1; /* Adjust based on your design */
+}
+
+.small-font {
+  font-size: small;
+  color: #49bf9d;
 }
