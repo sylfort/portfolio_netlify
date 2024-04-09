@@ -124,7 +124,19 @@ section {
 }
 
 #full {
-  width: 100vw;
+  width: 100%;
+}
+
+/* Media query for screens smaller than 640px */
+@media screen and (max-width: 736px) {
+  #full {
+    width: 100vw;
+    align-items: center;
+    display: flex; /* Initiates Flexbox layout */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally in the container */
+    justify-content: space-around; /* Distributes space evenly between children */
+  }
 }
 
 #btn-main-color {
@@ -458,6 +470,10 @@ pre code {
 
 .row.aln-center {
   justify-content: center;
+  display: flex; /* Initiates Flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally in the container */
+  justify-content: space-around; /* Distributes space evenly between children */
 }
 
 .row.aln-right {
@@ -678,7 +694,7 @@ pre code {
   padding-top: 5em;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen {
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -1647,6 +1663,18 @@ pre code {
 
   .row.gtr-200.gtr-uniform > * {
     padding-top: 3em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .row.aln-center {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #main {
+    margin-left: 15% !important;
   }
 }
 
@@ -3124,7 +3152,7 @@ body.is-touch .poptrox-popup .closer {
 
 /* XLarge */
 
-@media screen and (max-width: 1800px) {
+@media screen {
   /* Basic */
 
   body,
@@ -3137,7 +3165,7 @@ body.is-touch .poptrox-popup .closer {
 
 /* Large */
 
-@media screen and (max-width: 1800px) {
+@media screen {
   /* Header */
 
   #header {
@@ -3264,14 +3292,6 @@ body.is-touch .poptrox-popup .closer {
     margin-left: 0.75em;
     padding-left: 0.75em;
   }
-
-  /* Main */
-
-  #main {
-    margin: 0;
-    padding: 6em 4em;
-    width: 100%;
-  }
 }
 
 /* Small */
@@ -3334,6 +3354,12 @@ body.is-touch .poptrox-popup .closer {
     padding: 2.25em 1.5em 0.25em 1.5em;
   }
 
+  @media screen and (max-width: 736px) {
+    #main {
+      margin-left: 15% !important;
+    }
+  }
+
   #main > section {
     margin: 2.25em 0 0 0;
     padding: 2.25em 0 0 0;
@@ -3360,9 +3386,9 @@ body.is-touch .poptrox-popup .closer {
     padding: 4.5em 1.5em;
   }
 
-  #header h1 br {
+  /* #header h1 br {
     display: none;
-  }
+  } */
 
   /* Footer */
 
@@ -3492,6 +3518,7 @@ html {
   color: #0b130b !important;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 13pt;
+  margin-left: auto;
 }
 
 @media (max-width: 736px) {
