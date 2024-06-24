@@ -13,6 +13,7 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
@@ -85,9 +86,8 @@
 			<p>Web Developer with a background in economics and education, I have been working in Japan for 4+ years.</p>
 			<p>I have experience with multiple technology stacks including <b>React.js, Node.js, and Typescript.</b> I drive digital transformation as evidenced by:</p>
 			
-			<p>✅ Full stack development of Coffee Chats Now!, a web application that makes global developer networking interactions seamless.</p>
+      <p>✅ Developed and deployed Shiru Guestbook, a full-stack web application using Next.js, tRPC, and OpenAI API for automatic Japanese translations.</p> 
 			<p>✅ Open source contributions to Together, improving Discord event integrations for a community of 40,000+ people.</p>
-			<p>✅ Architecting AWS-powered deployments using Linux, Docker, and GitHub Actions, resulting in 99.9% uptime.</p>
 			
 			<p>I'm excited to explore challenges in fast-paced environments, leveraging my trilingual
 				<img src="images/brazil_flag.png" alt="Brazil Flag" class="flag-icon">
@@ -102,7 +102,199 @@
       <section id="work">
 			<h2>Recent Work</h2>
 
-            <!-- Runeterra -->
+      <!-- Guestbook -->
+<!-- <div class="col-4">
+  <article class="col-6 col-12-xsmall work-item">
+    <h2 id="project-title">Shiru Guestbook</h2>
+    <a href="https://github.com/sylfort/guestbook-t3/assets/24916160/87bfd091-454a-4c91-9904-b3d2b6905507" class="image fit thumb">
+      <img src="https://github.com/sylfort/guestbook-t3/assets/24916160/87bfd091-454a-4c91-9904-b3d2b6905507" alt="Shiru Guestbook Screenshot" />
+    </a>
+    <h3>Shiru Guestbook</h3>
+    <div class="row aln-center actions-container">
+      <a id="rounded" class="button" href="https://shiru-guestbook-t3.vercel.app/">Live Website</a>
+      <a id="rounded" class="button" href="https://github.com/sylfort/guestbook-t3">Github</a>
+    </div>
+    <div class="about-p">
+      <p>Shiru Guestbook is a modern web application that allows users to create and view guestbook entries. Built with the T3 Stack, it showcases the power of cutting-edge web technologies combined with cloud services.</p>
+      <h4>Key Features:</h4>
+      <ul>
+        <li>Create and view guestbook entries</li>
+        <li>Automatic Japanese translation of messages using OpenAI API</li>
+        <li>Secure authentication via GitHub and Discord</li>
+      </ul>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>TypeScript for enhanced code quality</li>
+        <li>Next.js for server-side rendering</li>
+        <li>Tailwind CSS for rapid UI development</li>
+        <li>tRPC for end-to-end typesafe APIs</li>
+        <li>Amazon RDS (PostgreSQL) for data storage</li>
+        <li>OpenAI API for Japanese translations</li>
+        <li>Vercel for deployment and hosting</li>
+      </ul>
+      <p>This project demonstrates my ability to work with modern full-stack technologies, integrate AI services, and deploy scalable applications on cloud platforms.</p>
+    </div>
+  </article>
+</div> -->
+
+<!-- Guestbook -->
+<div class="col-4">
+  <article class="col-6 col-12-xsmall work-item">
+    <h2 id="project-title">Shiru Guestbook</h2>
+    <a href="#" class="image fit thumb modal-trigger" data-modal="guestbookModal">
+      <img src="https://github.com/sylfort/guestbook-t3/assets/24916160/87bfd091-454a-4c91-9904-b3d2b6905507" alt="Shiru Guestbook Screenshot" />
+    </a>
+    <h3>Shiru Guestbook</h3>
+    <div class="row aln-center actions-container">
+      <a id="rounded" class="modern-button" href="https://shiru-guestbook-t3.vercel.app/">Live Website</a>
+      <a id="rounded" class="modern-button" href="https://github.com/sylfort/guestbook-t3">Github</a>
+    </div>
+    <div class="technologies-container">
+      <h4 class="technologies-heading">Technologies used:</h4>
+      <div class="technologies">
+        <button class="tech-button" disabled>TypeScript</button>
+        <button class="tech-button" disabled>Next.js</button>
+        <button class="tech-button" disabled>Tailwind CSS</button>
+        <button class="tech-button" disabled>tRPC</button>
+        <button class="tech-button" disabled>Amazon RDS</button>
+        <button class="tech-button" disabled>OpenAI</button>
+        <button class="tech-button" disabled>Vercel</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- Modal -->
+<div id="guestbookModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="about-p">
+      <p>Shiru Guestbook is a modern web application that allows users to create and view guestbook entries.</p>
+      <h4>Key Features:</h4>
+      <ul>
+        <li>Create and view guestbook entries</li>
+        <li>Automatic Japanese translation of messages using OpenAI API</li>
+        <li>Secure authentication via GitHub and Discord</li>
+      </ul>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>TypeScript for enhanced code quality</li>
+        <li>Next.js for server-side rendering</li>
+        <li>Tailwind CSS for rapid UI development</li>
+        <li>tRPC for end-to-end typesafe APIs</li>
+        <li>Amazon RDS (PostgreSQL) for data storage</li>
+        <li>OpenAI API for Japanese translations</li>
+        <li>Vercel for deployment and hosting</li>
+      </ul>
+      <p>This project demonstrates my ability to work with modern full-stack technologies, integrate AI services, and deploy scalable applications on cloud platforms.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Runeterra Marketplace -->
+<div class="col-4">
+  <article class="col-6 col-12-xsmall work-item">
+    <h2 id="project-title">Runeterra Marketplace</h2>
+    <a href="#" class="image fit thumb modal-trigger" data-modal="runeterraModal">
+      <img src="images/runeterra_screenshot.jpg" alt="Runeterra Marketplace Screenshot" />
+    </a>
+    <h3>Runeterra Marketplace</h3>
+    <div class="row aln-center actions-container">
+      <a id="rounded" class="modern-button" href="https://sylfort.github.io/marketplace">Live Website</a>
+      <a id="rounded" class="modern-button" href="https://github.com/sylfort/marketplace">Github</a>
+    </div>
+    <div class="technologies-container">
+      <h4 class="technologies-heading">Technologies used:</h4>
+      <div class="technologies">
+        <button class="tech-button" disabled>HTML5</button>
+        <button class="tech-button" disabled>JavaScript</button>
+        <button class="tech-button" disabled>Bootstrap CSS</button>
+      </div>
+    </div>
+
+  </article>
+</div>
+
+<!-- Coffee Chats Now -->
+<div class="col-4">
+  <article class="col-6 col-12-xsmall work-item">
+    <h2 id="project-title">Coffee Chats NOW!</h2>
+    <a href="#" class="image fit thumb modal-trigger" data-modal="coffeeChatsModal">
+      <img src="images/coffeechatsnow_screenshot.jpg" alt="Coffee Chats NOW! Screenshot" />
+    </a>
+    <h3>Coffee Chats NOW!</h3>
+    <div class="row aln-center actions-container">
+      <a id="rounded" class="modern-button" href="https://sylfort.github.io/100hours-bub">Live Website</a>
+      <a id="rounded" class="modern-button" href="https://github.com/sylfort/100hours-bub">Github</a>
+    </div>
+    <div class="technologies-container">
+      <h4 class="technologies-heading">Technologies used:</h4>
+      <div class="technologies">
+        <button class="tech-button" disabled>React</button>
+        <button class="tech-button" disabled>React Query</button>
+        <button class="tech-button" disabled>Yup</button>
+        <button class="tech-button" disabled>Tailwind CSS</button>
+        <button class="tech-button" disabled>Node.js</button>
+        <button class="tech-button" disabled>Express</button>
+        <button class="tech-button" disabled>MongoDB</button>
+        <button class="tech-button" disabled>Mongoose</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- Runeterra Marketplace Modal -->
+<div id="runeterraModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="about-p">
+      <h2>Runeterra Marketplace</h2>
+      <p>A marketplace application for Legends of Runeterra, built using vanilla JavaScript and Bootstrap CSS. This project showcases the ability to create interactive web applications using fundamental web technologies.</p>
+      <h4>Key Features:</h4>
+      <ul>
+        <li>Browse and search Legends of Runeterra items</li>
+        <li>Responsive design for various screen sizes</li>
+        <li>Interactive UI elements for an engaging user experience</li>
+      </ul>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>HTML5 for structuring the web content</li>
+        <li>Vanilla JavaScript for dynamic functionality</li>
+        <li>Bootstrap CSS for responsive and attractive styling</li>
+      </ul>
+      <p>This project demonstrates proficiency in core web development technologies and the ability to create functional, user-friendly web applications without relying on complex frameworks.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Coffee Chats Now Modal -->
+<div id="coffeeChatsModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="about-p">
+      <h2>Coffee Chats NOW!</h2>
+      <p>A coffee chat event scheduler app designed to streamline the process of finding and scheduling coffee chats within short time frames. This full-stack application integrates a React frontend with an Express backend.</p>
+      <h4>Key Features:</h4>
+      <ul>
+        <li>Quick and easy coffee chat scheduling</li>
+        <li>User-friendly interface for managing events</li>
+        <li>Real-time updates and notifications</li>
+      </ul>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>React for building a dynamic and responsive frontend</li>
+        <li>React Query for efficient data fetching and caching</li>
+        <li>Yup for form validation</li>
+        <li>Tailwind CSS for rapid and customizable styling</li>
+        <li>Node.js and Express for a robust backend</li>
+        <li>MongoDB with Mongoose for flexible data storage and management</li>
+      </ul>
+      <p>This project showcases full-stack development skills, the ability to work with modern JavaScript frameworks and libraries, and experience in creating applications that solve real-world problems.</p>
+    </div>
+  </div>
+</div>
+
+            <!-- Runeterra
         <div class="col-4">
           <article class="col-6 col-12-xsmall work-item">
 		      	<h2 id="project-title">Runeterra Marketplace</h2>
@@ -120,7 +312,7 @@
 
       <!-- CoffeeChatsNow -->
 
-      <div class="col-4">
+      <!-- <div class="col-4">
         <article class="col-6 col-12-xsmall work-item">
           <h2 id="project-title">Coffee Chats NOW!</h2>
           <a href="images/coffeechatsnow_screenshot.jpg" class="image fit thumb"
@@ -133,7 +325,7 @@
     </div>
     <div class="about-p">
     <p>Coffee chat event scheduler app, integrating a React frontend with an Express backend.</p>
-    </div>
+    </div> -->
             
           </article>
           <!-- <article class="col-6 col-12-xsmall work-item">
@@ -318,5 +510,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
   </body>
 </html>
