@@ -17,10 +17,11 @@
     <!-- Nav -->
     <nav id="nav">
       <ul class="container2">
-        <li><a href="#top">Home</a></li>
-        <li><a class="about" href="#about">About me</a></li>
-        <li><a class="work" href="#work">Projects</a></li>
-        <li><a class="contact2" href="#contact">Contact</a></li>
+        <li><a href="#top" data-i18n="nav.home">Home</a></li>
+        <li><a class="about" href="#about" data-i18n="nav.about">About me</a></li>
+        <li><a class="work" href="#work" data-i18n="nav.projects">Projects</a></li>
+        <li><a class="contact2" href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><button id="langToggle" class="lang-button">🌐 EN</button></li>
       </ul>
     </nav>
 
@@ -31,8 +32,8 @@
           ><img src="images/sylvio_optmized.webp" alt="images/avatar.jpg"
         /></a>
         <h1>
-          <strong>Hello! I'm Sylvio,<br /></strong> A Full-Stack<br />
-          Web Developer<br />
+          <strong data-i18n="header.greeting"></strong><br />
+          <span data-i18n="header.title"></span>
         </h1>
       </div>
     </header>
@@ -44,19 +45,18 @@
 		<div class="row aln-center aln-center-flex">
         <header id="full" class="major row aln-center">
 			
-          <h2 id="main-h2">
-            I'm <span id="color-effect">a Full-Stack Web Dev </span>
+          <h2 id="main-h2" data-i18n="main.intro">
           </h2>		
         </header>
         <ul class="actions">
           <li>
-          <a id="margin-first-buttons" href="#work" class="margin-first-buttons button scroll-me work"
-            >Check out my recent projects</a
+          <a id="margin-first-buttons" href="#work" class="margin-first-buttons button scroll-me work" data-i18n="main.cta.projects"
+            ></a
           >
           </li>
           <li>
-            <a id="margin-first-buttons" href="#contact" class="button scroll-me contact m-left"
-              >Contact me</a
+            <a id="margin-first-buttons" href="#contact" class="button scroll-me contact m-left" data-i18n="main.cta.contact"
+              ></a
             >
             </li>
         </ul>
@@ -68,16 +68,14 @@
 
       <!-- Four -->
       <section id="about">
-        <h2>About me</h2>
+        <h2 data-i18n="about.title"></h2>
 
         <div class="about-p">
-			<p>Web Developer with a background in economics and education, I have been working in Japan for 4+ years.</p>
-			<p>I have experience with multiple technology stacks including <b>React.js, Node.js, and Typescript.</b> I drive digital transformation as evidenced by:</p>
-			
-      <p>✅ Developed and deployed Shiru Guestbook, a full-stack web application using Next.js, tRPC, and OpenAI API for automatic Japanese translations.</p> 
-			<p>✅ Open source contributions to Together, improving Discord event integrations for a community of 40,000+ people.</p>
-			
-			<p>I'm excited to explore challenges in fast-paced environments, leveraging my trilingual
+			<p data-i18n="about.p1"></p>
+			<p data-i18n="about.p2"></p>
+			<p data-i18n="about.p3"></p>
+			<p data-i18n="about.p4"></p>
+			<p data-i18n="about.p5">
 				<img src="images/brazil_flag.png" alt="Brazil Flag" class="flag-icon">
 				<img src="images/usa_flag.png" alt="USA Flag" class="flag-icon">
 				<img src="images/japan_flag.png" alt="Japan Flag" class="flag-icon">
@@ -439,11 +437,8 @@
 
       <!-- Three -->
       <section id="three">
-        <h2>Get In Touch</h2>
-        <p>
-          Have any questions, comments or concerns? Reach out to me to discuss
-          how we can work together!
-        </p>
+        <h2 data-i18n="contact.title"></h2>
+        <p data-i18n="contact.subtitle"></p>
         <div class="row">
           <div class="col-8 col-12-small">
             <form
@@ -466,7 +461,7 @@
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Name"
+                    placeholder="Name" data-i18n="contact.form.name"
                     required
                   />
                 </div>
@@ -475,7 +470,7 @@
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Email"
+                    placeholder="Email" data-i18n="contact.form.email"
                     required
                   />
                 </div>
@@ -483,15 +478,14 @@
                   <textarea
                     name="message"
                     id="message"
-                    placeholder="Message"
+                    placeholder="Message" data-i18n="contact.form.message"
                     rows="4"
                   ></textarea>
                 </div>
               </div>
               <ul class="actions">
                 <li>
-                  <button type="submit" value="Send Message">
-                    Send Message
+                  <button type="submit" value="Send Message" data-i18n="contact.form.send">
                   </button>
                 </li>
               </ul>
