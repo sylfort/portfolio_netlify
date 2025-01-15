@@ -207,7 +207,7 @@ $(document).ready(function() {
     });
 
     // Update button text
-    $langToggle.text(lang === 'en' ? '🌐 EN' : '🌐 JP');
+    $langToggle.text(lang === 'en' ? '🌐 日本語' : '🌐 English');
   }
 
   $langToggle.on('click', function() {
