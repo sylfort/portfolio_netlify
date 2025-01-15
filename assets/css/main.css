@@ -484,12 +484,12 @@ pre code {
   justify-content: flex-start;
 }
 
-.aln-center-flex {
+/* .aln-center-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
 .row.aln-center {
   justify-content: center;
