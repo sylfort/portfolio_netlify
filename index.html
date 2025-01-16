@@ -12,16 +12,17 @@
     <link rel="stylesheet" href="assets/css/carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>let currentLang = 'en';</script>
   </head>
   <body class="is-preload">
     <!-- Nav -->
     <nav id="nav">
       <ul class="container2">
-        <li><a href="#top" data-i18n="nav.home">Home</a></li>
-        <li><a class="about" href="#about" data-i18n="nav.about">About me</a></li>
-        <li><a class="work" href="#work" data-i18n="nav.projects">Projects</a></li>
-        <li><a class="contact2" href="#contact" data-i18n="nav.contact">Contact</a></li>
-        <li><button id="langToggle" class="lang-button">🌐 日本語</button></li>
+        <li><a href="#top" data-i18n="nav.home"></a></li>
+        <li><a class="about" href="#about" data-i18n="nav.about"></a></li>
+        <li><a class="work" href="#work" data-i18n="nav.projects"></a></li>
+        <li><a class="contact2" href="#contact" data-i18n="nav.contact"></a></li>
+        <li><button id="langToggle" class="lang-button"></button></li>
       </ul>
     </nav>
 
@@ -32,8 +33,8 @@
           ><img src="images/sylvio_optmized.webp" alt="images/avatar.jpg"
         /></a>
         <h1>
-          <strong data-i18n="header.greeting">Hello! I'm Sylvio,<br /></strong>A Full-Stack<br />
-          Web Developer<br />
+          <strong data-i18n="header.greeting"></strong><br /><span data-i18n="header.title"></span><br />
+            <span data-i18n="header.title2"></span><br />
         </h1>
       </div>
     </header>
@@ -46,18 +47,17 @@
         <header id="full" class="major row aln-center">
 			
           <h2 id="main-h2" data-i18n="main.intro">
-            I'm <span id="color-effect" data-i18n="header.title">a Full-Stack Web Dev</span>
           </h2>		
         </header>
         <ul class="actions">
           <li>
           <a id="margin-first-buttons" href="#work" class="margin-first-buttons button scroll-me work" data-i18n="main.cta.projects"
-            >Check out my recent projects</a
+            ></a
           >
           </li>
           <li>
             <a id="margin-first-buttons" href="#contact" class="button scroll-me contact m-left" data-i18n="main.cta.contact"
-              >Contact me</a
+              ></a
             >
             </li>
         </ul>
@@ -76,18 +76,15 @@
 			<p data-i18n="about.p2"></p>
 			<p data-i18n="about.p3"></p>
 			<p data-i18n="about.p4"></p>
-			<p data-i18n="about.p5">
-				<img src="images/brazil_flag.png" alt="Brazil Flag" class="flag-icon">
-				<img src="images/usa_flag.png" alt="USA Flag" class="flag-icon">
-				<img src="images/japan_flag.png" alt="Japan Flag" class="flag-icon">
-				communication skills and adaptability from living in multiple countries.</p>
+			<p data-i18n="about.p5"></p>
+			<p data-i18n="about.p6"></p>
         
 		</div>	
       </section>
 
       <!-- Two -->
       <section id="work">
-			<h2>Recent Work</h2>
+			<h2 data-i18n="recent.work"></h2>
 
       <!-- Guestbook -->
 <!-- <div class="col-4">
@@ -128,16 +125,37 @@
 <div class="col-4">
   <article class="col-6 col-12-xsmall work-item">
     <h2 id="project-title">Cats n' Cheese</h2>
+    
+    
     <a href="#" class="image fit thumb modal-trigger" data-modal="catsModal">
       <img src="images/catsncheese_screenshot.jpg" alt="Cats and Cheese Screenshot" />
+
+      <!-- Details Sticker -->
+    <!-- <div id="Awesome" class="anim750">
+      <div class="reveal square_wrapper">
+      </div>
+                                                    
+      <div class="sticky anim750">
+        <div class="front square_wrapper anim750">
+          <div class="square anim750"></div>
+        </div>
+      </div>
+            
+      <h4 class="sticker-h4">Click to check<br>project details</h4>                                              
+      <div class="sticky anim750">
+        <div class="back square_wrapper anim750">
+          <div class="square anim750"></div>
+        </div>
+      </div>
+    </div> -->
     </a>
     <h3>Cats n' Cheese</h3>
     <div class="row aln-center actions-container">
-      <a id="rounded" class="modern-button" href="https://cats-n-cheese.vercel.app/">Live Website</a>
-      <a id="rounded" class="modern-button" href="https://github.com/sylfort/cats-n-cheese">Github</a>
+      <a id="rounded" class="modern-button" href="https://cats-n-cheese.vercel.app/" data-i18n="website"></a>
+      <a id="rounded" class="modern-button" href="https://github.com/sylfort/cats-n-cheese" data-i18n="github"></a>
     </div>
     <div class="technologies-container">
-      <h4 class="technologies-heading">Technologies used:</h4>
+      <h4 class="technologies-heading" data-i18n="technologies-heading"></h4>
       <div class="technologies">
         <button class="tech-button" disabled>JavaScript</button>
         <button class="tech-button" disabled>React</button>
@@ -154,17 +172,17 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="about-p">
-      <p>Cats n' Cheese is a single-player game where players act as mice stealing cheese from cats.</p>
-      <h4>Key Features:</h4>
+      <p data-i18n="modal.cats.description"></p>
+      <h4 data-i18n="modal.cats.features.title"></h4>
       <ul>
-        <li>Built in two weekends for the MeltingHack Sprint#2 Hackathon</li>
-        <li>Asynchronously worked with 4 teammates from different continents to deliver the project in a Agile manner</li>
+        <li data-i18n="modal.cats.features.1"></li>
+        <li data-i18n="modal.cats.features.2"></li>
       </ul>
-      <h4>Technologies Used:</h4>
+      <h4 data-i18n="modal.cats.tech.title"></h4>
       <ul>
-        <li>React for client-side rendering</li>
-        <li>Tailwind CSS for rapid UI development</li>
-        <li>Vercel for deployment and hosting</li>
+        <li data-i18n="modal.cats.tech.1"></li>
+        <li data-i18n="modal.cats.tech.2"></li>
+        <li data-i18n="modal.cats.tech.3"></li>
       </ul>
       <!-- <p>This project demonstrates my ability to work with modern full-stack technologies, integrate AI services, and deploy scalable applications on cloud platforms.</p> -->
     </div>
@@ -172,19 +190,19 @@
 </div>
 
 <!-- Guestbook -->
-<div class="col-4">
+<div class="co
   <article class="col-6 col-12-xsmall work-item">
-    <h2 id="project-title">Shiru Guestbook</h2>
+    <h2 id="project-title"></h2>
     <a href="#" class="image fit thumb modal-trigger" data-modal="guestbookModal">
       <img src="https://github.com/sylfort/guestbook-t3/assets/24916160/87bfd091-454a-4c91-9904-b3d2b6905507" alt="Shiru Guestbook Screenshot" />
     </a>
     <h3>Shiru Guestbook</h3>
     <div class="row aln-center actions-container">
-      <a id="rounded" class="modern-button" href="https://shiru-guestbook-t3.vercel.app/">Live Website</a>
-      <a id="rounded" class="modern-button" href="https://github.com/sylfort/guestbook-t3">Github</a>
+      <a id="rounded" class="modern-button" href="https://shiru-guestbook-t3.vercel.app/" data-i18n="website"></a>
+      <a id="rounded" class="modern-button" href="https://github.com/sylfort/guestbook-t3" data-i18n="github"></a>
     </div>
     <div class="technologies-container">
-      <h4 class="technologies-heading">Technologies used:</h4>
+      <h4 class="technologies-heading" data-i18n="technologies-heading">Technologies used:</h4>
       <div class="technologies">
         <button class="tech-button" disabled>TypeScript</button>
         <button class="tech-button" disabled>Next.js</button>
@@ -203,22 +221,22 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="about-p">
-      <p>Shiru Guestbook is a modern web application that allows users to create and view guestbook entries.</p>
-      <h4>Key Features:</h4>
+      <p data-i18n="modal.guestbook.description"></p>
+      <h4 data-i18n="modal.guestbook.features.title"></h4>
       <ul>
-        <li>Create and view guestbook entries</li>
-        <li>Automatic Japanese translation of messages using OpenAI API</li>
-        <li>Secure authentication via GitHub and Discord</li>
+        <li data-i18n="modal.guestbook.features.1"></li>
+        <li data-i18n="modal.guestbook.features.2"></li>
+        <li data-i18n="modal.guestbook.features.3"></li>
       </ul>
-      <h4>Technologies Used:</h4>
+      <h4 data-i18n="modal.guestbook.tech.title"></h4>
       <ul>
-        <li>TypeScript for enhanced code quality</li>
-        <li>Next.js for server-side rendering</li>
-        <li>Tailwind CSS for rapid UI development</li>
-        <li>tRPC for end-to-end typesafe APIs</li>
-        <li>Amazon RDS (PostgreSQL) for data storage</li>
-        <li>OpenAI API for Japanese translations</li>
-        <li>Vercel for deployment and hosting</li>
+        <li data-i18n="modal.guestbook.tech.1"></li>
+        <li data-i18n="modal.guestbook.tech.2"></li>
+        <li data-i18n="modal.guestbook.tech.3"></li>
+        <li data-i18n="modal.guestbook.tech.4"></li>
+        <li data-i18n="modal.guestbook.tech.5"></li>
+        <li data-i18n="modal.guestbook.tech.6"></li>
+        <li data-i18n="modal.guestbook.tech.7"></li>
       </ul>
       <!-- <p>This project demonstrates my ability to work with modern full-stack technologies, integrate AI services, and deploy scalable applications on cloud platforms.</p> -->
     </div>
@@ -234,11 +252,11 @@
     </a>
     <h3>Runeterra Marketplace</h3>
     <div class="row aln-center actions-container">
-      <a id="rounded" class="modern-button" href="https://sylfort.github.io/marketplace">Live Website</a>
-      <a id="rounded" class="modern-button" href="https://github.com/sylfort/marketplace">Github</a>
+      <a id="rounded" class="modern-button" href="https://sylfort.github.io/marketplace" data-i18n="website"></a>
+      <a id="rounded" class="modern-button" href="https://github.com/sylfort/marketplace" data-i18n="github"></a>
     </div>
     <div class="technologies-container">
-      <h4 class="technologies-heading">Technologies used:</h4>
+      <h4 class="technologies-heading" data-i18n="technologies-heading"></h4>
       <div class="technologies">
         <button class="tech-button" disabled>HTML5</button>
         <button class="tech-button" disabled>JavaScript</button>
@@ -254,19 +272,19 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="about-p">
-      <h2>Runeterra Marketplace</h2>
-      <p>A marketplace application for Legends of Runeterra, built using vanilla JavaScript and Bootstrap CSS. This project showcases the ability to create interactive web applications using fundamental web technologies.</p>
-      <h4>Key Features:</h4>
+      <h2 data-i18n="modal.runeterra.title"></h2>
+      <p data-i18n="modal.runeterra.description"></p>
+      <h4 data-i18n="modal.runeterra.features.title"></h4>
       <ul>
-        <li>Browse and search Legends of Runeterra items</li>
-        <li>Responsive design for various screen sizes</li>
-        <li>Interactive UI elements for an engaging user experience</li>
+        <li data-i18n="modal.runeterra.features.1"></li>
+        <li data-i18n="modal.runeterra.features.2"></li>
+        <li data-i18n="modal.runeterra.features.3"></li>
       </ul>
-      <h4>Technologies Used:</h4>
+      <h4 data-i18n="modal.runeterra.tech.title"></h4>
       <ul>
-        <li>HTML5 for structuring the web content</li>
-        <li>Vanilla JavaScript for dynamic functionality</li>
-        <li>Bootstrap CSS for responsive and attractive styling</li>
+        <li data-i18n="modal.runeterra.tech.1"></li>
+        <li data-i18n="modal.runeterra.tech.2"></li>
+        <li data-i18n="modal.runeterra.tech.3"></li>
       </ul>
       <!-- <p>This project demonstrates proficiency in core web development technologies and the ability to create functional, user-friendly web applications without relying on complex frameworks.</p> -->
     </div>
@@ -282,11 +300,11 @@
     </a>
     <h3>Coffee Chats NOW!</h3>
     <div class="row aln-center actions-container">
-      <a id="rounded" class="modern-button" href="https://sylfort.github.io/100hours-bub">Live Website</a>
-      <a id="rounded" class="modern-button" href="https://github.com/sylfort/100hours-bub">Github</a>
+      <a id="rounded" class="modern-button" href="https://sylfort.github.io/100hours-bub" data-i18n="website"></a>
+      <a id="rounded" class="modern-button" href="https://github.com/sylfort/100hours-bub" data-i18n="github"></a>
     </div>
     <div class="technologies-container">
-      <h4 class="technologies-heading">Technologies used:</h4>
+      <h4 class="technologies-heading" data-i18n="technologies-heading"></h4>
       <div class="technologies">
         <button class="tech-button" disabled>React</button>
         <button class="tech-button" disabled>React Query</button>
@@ -306,31 +324,30 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="about-p">
-      <h2>Coffee Chats NOW!</h2>
-      <p>A coffee chat event scheduler app designed to streamline the process of finding and scheduling coffee chats within short time frames. This full-stack application integrates a React frontend with an Express backend.</p>
-      <h4>Key Features:</h4>
+      <h2 data-i18n="modal.coffee.title">Coffee Chats NOW!</h2>
+      <p data-i18n="modal.coffee.description"></p>
+      <h4 data-i18n="modal.coffee.features.title"></h4>
       <ul>
-        <li>Quick and easy coffee chat scheduling</li>
-        <li>User-friendly interface for managing events</li>
-        <li>Real-time updates and notifications</li>
+        <li data-i18n="modal.coffee.features.1"></li>
+        <li data-i18n="modal.coffee.features.2"></li>
+        <li data-i18n="modal.coffee.features.3"></li>
       </ul>
-      <h4>Technologies Used:</h4>
+      <h4 data-i18n="modal.coffee.tech.title"></h4>
       <ul>
-        <li>React for building a dynamic and responsive frontend</li>
-        <li>React Query for efficient data fetching and caching</li>
-        <li>Yup for form validation</li>
-        <li>Tailwind CSS for rapid and customizable styling</li>
-        <li>Node.js and Express for a robust backend</li>
-        <li>MongoDB with Mongoose for flexible data storage and management</li>
+        <li data-i18n="modal.coffee.tech.1"></li>
+        <li data-i18n="modal.coffee.tech.2"></li>
+        <li data-i18n="modal.coffee.tech.3"></li>
+        <li data-i18n="modal.coffee.tech.4"></li>
+        <li data-i18n="modal.coffee.tech.5"></li>
+        <li data-i18n="modal.coffee.tech.6"></li>
       </ul>
-      <!-- <p>This project showcases full-stack development skills, the ability to work with modern JavaScript frameworks and libraries, and experience in creating applications that solve real-world problems.</p> -->
     </div>
   </div>
 </div>
 
 <!-- Menternshift -->
 <section id="seven">
-<h2>OSS Group Project</h2>
+<h2 data-i18n="oss"></h2>
 <div class="col-4">
   <article class="col-6 col-12-xsmall work-item">
     <h2 id="project-title">Menternshift</h2>
@@ -347,94 +364,9 @@
       <a id="rounded" class="modern-button" href="https://github.com/ayau8/menternshift-backend">Github Backend</a>
       <a id="rounded" class="modern-button" href="https://github.com/DaveBFlanikJr/menternshift-frontend">Github Frontend</a>
     </div>
-    <!-- <div class="technologies-container">
-      <h4 class="technologies-heading">Technologies used:</h4>
-      <div class="technologies">
-        <button class="tech-button" disabled>React</button>
-        <button class="tech-button" disabled>Node.js</button>
-        <button class="tech-button" disabled>Express</button>
-        <button class="tech-button" disabled>MongoDB</button>
-        <button class="tech-button" disabled>Tailwind CSS</button>
-      </div>
-    </div> -->
   </article>
 </div>
 </section>
-
-            <!-- Runeterra
-        <div class="col-4">
-          <article class="col-6 col-12-xsmall work-item">
-		      	<h2 id="project-title">Runeterra Marketplace</h2>
-            <a href="images/runeterra_screenshot.jpg" class="image fit thumb"
-              ><img src="images/runeterra_screenshot.jpg" alt=""
-            /></a>
-            <h3>Runeterra Marketplace</h3>
-			<div class="row aln-center actions-container">
-				<a id="rounded" class="button" href="https://sylfort.github.io/marketplace">Live Website</a>
-				<a id="rounded" class="button" href="https://github.com/sylfort/marketplace">Github</a>
-			</div>
-			<div class="about-p">
-			<p>Marketplace for Legends of Runeterra built in Vanilla JavaScript and Bootstrap CSS</p>
-			</div>
-
-      <!-- CoffeeChatsNow -->
-
-      <!-- <div class="col-4">
-        <article class="col-6 col-12-xsmall work-item">
-          <h2 id="project-title">Coffee Chats NOW!</h2>
-          <a href="images/coffeechatsnow_screenshot.jpg" class="image fit thumb"
-            ><img src="images/coffeechatsnow_screenshot.jpg" alt=""
-          /></a>
-          <h3>Coffee Chats NOW!</h3>
-    <div class="row aln-center actions-container">
-      <a id="rounded" class="button" href="https://sylfort.github.io/100hours-bub">Live Website</a>
-      <a id="rounded" class="button" href="https://github.com/sylfort/100hours-bub">Github</a>
-    </div>
-    <div class="about-p">
-    <p>Coffee chat event scheduler app, integrating a React frontend with an Express backend.</p>
-    </div> -->
-            
-          </article>
-          <!-- <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/02.jpg" class="image fit thumb"
-              ><img src="images/thumbs/02.jpg" alt=""
-            /></a>
-            <h3>Ultricies lacinia interdum</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/03.jpg" class="image fit thumb"
-              ><img src="images/thumbs/03.jpg" alt=""
-            /></a>
-            <h3>Tortor metus commodo</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article> -->
-          <!-- <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/04.jpg" class="image fit thumb"
-              ><img src="images/thumbs/04.jpg" alt=""
-            /></a>
-            <h3>Quam neque phasellus</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/05.jpg" class="image fit thumb"
-              ><img src="images/thumbs/05.jpg" alt=""
-            /></a>
-            <h3>Nunc enim commodo aliquet</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/06.jpg" class="image fit thumb"
-              ><img src="images/thumbs/06.jpg" alt=""
-            /></a>
-            <h3>Risus ornare lacinia</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article>
-        </div>
-        <ul class="actions">
-          <li><a href="#" class="button">Full Portfolio</a></li>
-        </ul> -->
-      </section>
 
       <!-- Three -->
       <section id="three">
@@ -492,15 +424,15 @@
               </ul>
             </form>
           </div>
-          <div class="col-4 col-12-small">
+          <div class="col-4 col-12-small padding-left-10">
             <ul class="labeled-icons">
               <li>
                 <h3 class="icon solid fa-home">
-                  <span class="label">Address</span>
+                  <span class="label" data-i18n="contact.address.title"></span>
                 </h3>
-                Akashi<br />
-                Hyogo<br />
-                Japan
+                <span data-i18n="contact.address.city"></span><br />
+                <span data-i18n="contact.address.prefecture"></span><br />
+                <span data-i18n="contact.address.country"></span>
               </li>
               <!-- <li>
                 <h3 class="icon solid fa-mobile-alt">
@@ -510,7 +442,7 @@
               </li> -->
               <li>
                 <h3 class="icon solid fa-envelope">
-                  <span class="label">Email</span>
+                  <span class="label"></span>
                 </h3>
                 <a href="#">contact@sylviomafort.dev</a>
               </li>
@@ -518,8 +450,7 @@
           </div>
 
           <ul class="icons copy copyright">
-            <li>&copy; 2024 Sylvio Mafort</li>
-            <li>Design: HTML5 UP</li>
+            <li><span data-i18n="footer.copyright"></span></li>
           </ul>
         </div>
       </section>
@@ -534,14 +465,14 @@
               href="https://twitter.com/Sylfort1"
               class="icon brands fa-twitter"
               ><span class="label">Twitter</span>
-              <div class="small-font">Twitter</div>
+              <div class="small-font" data-i18n="social.twitter">Twitter</div>
               </a
             >     
           </li>
           <li>
             <a href="https://github.com/sylfort" class="icon brands fa-github"
               ><span class="label">Github</span>
-              <div class="small-font">Github</div>
+              <div class="small-font" data-i18n="social.github">Github</div>
               </a
             >
           </li>
@@ -550,7 +481,7 @@
               href="https://www.linkedin.com/in/sylvio-mafort/"
               class="icon brands fa-linkedin"
               ><span class="label">Linkedin</span>
-              <div class="small-font">Linkedin</div>
+              <div class="small-font" data-i18n="social.linkedin">Linkedin</div>
               </a
             >
           </li>
@@ -559,7 +490,7 @@
               href="mailto:contact@sylviomafort.dev"
               class="icon solid fa-envelope"
               ><span class="label">Email</span>
-              <div class="small-font">Email</div></a
+              <div class="small-font" data-i18n="social.email">Email</div></a
             >
           </li>
         </ul>
