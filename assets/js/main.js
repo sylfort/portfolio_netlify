@@ -230,17 +230,17 @@ const translations = {
     "nav.contact": "お問い合わせ",
     "header.greeting": "シルビオです!",
     "header.title": "フルスタック",
-    "header.title2": "ウェブ開発者",
-    "main.intro": "<span id=\"color-effect\">フルスタックウェブ開発者</span>です",
+    "header.title2": "ウェブデベロッパー",
+    "main.intro": "<span id=\"color-effect\">ウェブエンジニア</span>",
     "main.cta.projects": "最近のプロジェクトを見る",
     "main.cta.contact": "お問い合わせ",
     "about.title": "自己紹介",
-    "about.p1": "経済学と教育のバックグラウンドを持つウェブ開発者として、日本で4年以上働いています。",
-    "about.p2": "<b>React.js、Node.js、Typescript</b>など、複数の技術スタックの経験があります。以下のような実績で、デジタルトランスフォーメーションを推進しています：",
-    "about.p3": "✅ Next.js、tRPC、OpenAI APIを使用した自動日本語翻訳機能付きフルスタックウェブアプリケーション「Shiru Guestbook」を開発・デプロイ。",
-    "about.p4": "✅ 40,000人以上のコミュニティのDiscordイベント統合を改善するオープンソースプロジェクト「Together」に貢献。",
-    "about.p5": "複数の国での生活経験を活かした適応力と3カ国語<img src=\"images/brazil_flag.png\" alt=\"Brazil Flag\" class=\"flag-icon\"><img src=\"images/usa_flag.png\" alt=\"USA Flag\" class=\"flag-icon\"><img src=\"images/japan_flag.png\" alt=\"Japan Flag\" class=\"flag-icon\"></img>で",
-    "about.p6": "のコミュニケーションスキルと適応力を活かし、変化の激しい環境で課題に挑戦できることを楽しみにしています。",
+    "about.p1": "経済学と教育のバックグラウンドを持つウェブ開発者です。日本で4年以上働いています。",
+    "about.p2": "<b>React.js、Node.js、Typescript</b>など、さまざまな技術スタックを活用した開発経験があります。以下はこれまでの実績の一例です：",
+    "about.p3": "✅ Next.js、tRPC、OpenAI APIを使用した自動日本語翻訳機能付きフルスタックウェブアプリケーション「Shiru Guestbook」を開発・リリース。",
+    "about.p4": "✅「Together」のオープンソースプロジェクトに貢献し、40,000人以上のコミュニティ向けにDiscordのイベント連携機能を改善。",
+    "about.p5": "また、多国籍での生活経験を生かした適応力と、3か国語<img src=\"images/brazil_flag.png\" alt=\"Brazil Flag\" class=\"flag-icon\"><img src=\"images/usa_flag.png\" alt=\"USA Flag\" class=\"flag-icon\"><img src=\"images/japan_flag.png\" alt=\"Japan Flag\" class=\"flag-icon\"></img> でのコミュニケーション能力を活かし、",
+    "about.p6": "スピード感のある環境で新たな挑戦をしていきたいと考えています。",
     "recent.work": "最近の作品",
     "oss": "オプンソースプログラム",
     "website": "ウェブサイト",
@@ -303,7 +303,7 @@ const translations = {
 "modal.coffee.tech.4": "迅速かつカスタマイズ可能なスタイリングのためのTailwind CSS",
 "modal.coffee.tech.5": "堅牢なバックエンドのためのNode.jsとExpress",
 "modal.coffee.tech.6": "柔軟なデータストレージと管理のためのMongoDBとMongoose",
-"technologies-heading": "使用されるテクノロジー:"
+"technologies-heading": "使用したテクノロジー:"
   }
 };
 
