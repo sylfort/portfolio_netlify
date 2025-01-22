@@ -162,17 +162,37 @@ section {
   line-height: normal;
 }
 
+
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  #nav {
+    height: 104px !important;
+  }
+
+  #nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    line-height: 0px;
+    gap: 0px 38px;
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 400px) {
+
+  #nav ul{
+    gap: 0px 20px;
+  }
+}
+
 /* Media query for screens smaller than 640px */
 @media (max-width: 980px) {
   #nav ul {
     margin-left: 0 !important;
-  }
-
-  #main-h2 {
-    min-width: auto; /* Set min-width to auto for mobile devices */
-    visibility: hidden;
-    margin: 0;
-    height: 0;
   }
 }
 
@@ -3364,7 +3384,7 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
-    padding: 2.25em 1.5em;
+    padding: 0.7em 1.5em;
   }
 
   #header h1 {
@@ -3689,8 +3709,6 @@ html {
   transition: all 750ms ease-in-out;
 }
 
-
-
 #Awesome {
   width: 60px;
   height: 60px;
@@ -3700,7 +3718,7 @@ html {
   top: 8px;
   left: -7px;
   z-index: 10;
-  font-size:10px;
+  font-size: 10px;
 }
 
 #Awesome .sticky {
@@ -3758,7 +3776,7 @@ html {
 }
 
 #Awesome .back .square {
-  margin-top: calc(-100% + 5px);;
+  margin-top: calc(-100% + 5px);
   background-color: #fbec3f;
   background-image: -webkit-linear-gradient(
     bottom,
@@ -3772,10 +3790,11 @@ html {
 }
 
 #Awesome .front {
-  height: calc(100% - 10px);;
+  height: calc(100% - 10px);
   bottom: 0;
   top: auto;
-  -webkit-box-shadow: 0 calc(-100% + 10px) 10px calc(-100% + 10px) rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 calc(-100% + 10px) 10px calc(-100% + 10px)
+    rgba(0, 0, 0, 0.3);
 }
 
 #Awesome:hover .front {
@@ -3802,8 +3821,6 @@ html {
     #f7bb37 95%
   );
 }
-
-
 
 #Awesome h4 {
   font-family: "helvetica neue", arial;
@@ -3838,6 +3855,27 @@ html {
   margin-top: 10px;
 }
 
-.padding-left-10{
+.padding-left-10 {
   padding-left: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  #main-h2 {
+    min-width: auto; /* Set min-width to auto for mobile devices */
+    visibility: hidden;
+    margin: 0;
+    height: 0;
+  }
+
+}
+
+@media screen and (max-width: 769px) {
+  #main {
+    margin-left: 30%;
+    max-width: none;
+    padding: 3em 3em 3em 3em;
+  }
+}
+
+
+
