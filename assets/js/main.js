@@ -94,28 +94,58 @@
   }
 
   //   Scroll
-  $(document).ready(function () {
-    $(".work").click(function () {
-      var scrollDiv = document.getElementById("work").offsetTop;
-      window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-    });
+  // $(document).ready(function () {
+  //   event.preventDefault();
+  //   const stickyHeaderHeight = 114;
+  
+  //   $(".work").click(function () {
+  //     var scrollDiv = document.getElementById("work").offsetTop;
+  //     window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+  //   });
 
-    $(".contact").click(function () {
-      var scrollDiv = document.getElementById("three").offsetTop;
-      window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-    });
+  //   $(".contact").click(function () {
+  //     var scrollDiv = document.getElementById("three").offsetTop;
+  //     window.scrollTo({ top: scrollDiv - 114, behavior: "smooth" });
+  //   });
 
-    $(".top").click(function () {
-      var scrollDiv = document.getElementById("header").offsetTop;
-      window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-    });
+  //   $(".top").click(function () {
+  //     var scrollDiv = document.getElementById("header").offsetTop;
+  //     window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+  //   });
 
-    $(".about").click(function () {
-      var scrollDiv = document.getElementById("about").offsetTop;
-      window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+  //   $(".about").click(function () {
+  //     var scrollDiv = document.getElementById("about").offsetTop;
+  //     window.scrollTo({ top: scrollDiv - 114, behavior: "smooth" });
+  //   });
+  // });
+
+  $(document).ready(function() {
+    const stickyHeaderHeight = $("#nav").outerHeight(); // Get header height dynamically
+
+    function smoothScrollTo(targetId, event) {
+        event.preventDefault(); // *Prevent the default link behavior*
+
+        const targetElement = document.getElementById(targetId);
+
+        if (!targetElement) {
+            console.warn(`Target element with ID "${targetId}" not found.`);
+            return;
+        }
+
+        const targetOffset = targetElement.offsetTop - stickyHeaderHeight;
+
+        window.scrollTo({
+            top: targetOffset,
+            behavior: "smooth"
+        });
+    }
+
+
+    $("#nav a").click(function(event) {  // Attach to all links *inside* the nav
+        const targetId = $(this).attr("href").substring(1); // Get ID from href (remove #)
+        smoothScrollTo(targetId, event);
     });
   });
-
   // Main Sections: Two.
 
   // Lightbox gallery.
